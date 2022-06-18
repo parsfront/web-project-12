@@ -1,3 +1,5 @@
+@import url("./reset.css");
+
 @font-face {
     font-family: "vazir";
     src: url("../fonts/vazir.eot") format("eot"), url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff") format("woff2"), url("../fonts/vazir.woff2") format("woff");
@@ -6,6 +8,10 @@
 body {
     direction: rtl;
     font-family: "vazir";
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -62,6 +68,15 @@ body {
     font-size: 18px;
 }
 
+#header-top .header-top-social ul li a:hover {
+    color: #faa000;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
 /*Slider*/
 #slider {
     background-image: url("../images/p1.jpg");
@@ -99,4 +114,67 @@ body {
     font-weight: 900;
     font-size: 40px;
     color: #faa000;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    height: 9vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: space-between;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+header ul li {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header ul li::before {
+    content: "";
+    width: 0%;
+    height: 4px;
+    color: #faa000;
+    background-color: #faa000;
+    position: absolute;
+    bottom: 0;
+}
+
+header ul li:hover::before {
+    width: 100%;
+    transition: width 0.3s;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+}
+
+header .brand-logo {
+    width: 8%;
+}
+
+header .brand-logo img {
+    width: 100%;
+    height: 100%;
 }
