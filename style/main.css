@@ -941,13 +941,17 @@ header .brand-logo img {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    flex-direction: column;
     padding: 80px 0;
     display: flex;
+    position: relative;
 }
 
 #footer .footer-about {
     width: 100%;
     display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #faa000;
 }
 
 #footer .footer-about .footer-about-title {
@@ -1022,7 +1026,7 @@ header .brand-logo img {
 #footer .footer-content {
     width: 100%;
     display: flex;
-    align-items: center;
+    margin-bottom: 40px;
     justify-content: space-between;
     padding-top: 30px;
 }
@@ -1072,4 +1076,103 @@ header .brand-logo img {
 
 #footer .footer-content .hot-content ul li a img {
     width: 80px;
+}
+
+#footer .footer-content .quick-access h3 {
+    color: #faa000;
+    margin-bottom: 40px;
+}
+
+#footer .footer-content .quick-access ul {
+    width: 100%;
+}
+
+#footer .footer-content .quick-access ul li {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #faa000;
+    padding-bottom: 30px;
+}
+
+#footer .footer-content .quick-access ul li:nth-child(4) {
+    border-bottom: none;
+}
+
+#footer .footer-content .quick-access ul li a {
+    text-decoration: none;
+    color: #faa000;
+}
+
+#footer .footer-content .portfolio h3 {
+    color: #faa000;
+    margin-bottom: 40px;
+}
+
+#footer .footer-content .portfolio ul {
+    width: 100%;
+}
+
+#footer .footer-content .portfolio ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #faa000;
+    padding-bottom: 20px;
+}
+
+#footer .footer-content .portfolio ul li:nth-child(3) {
+    border-bottom: none;
+}
+
+#footer .footer-content .portfolio ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .footer-content .portfolio ul li a .portfolio-content-title {
+    line-height: 30px;
+}
+
+#footer .footer-content .portfolio ul li a .portfolio-content-title h5 {
+    color: #faa000;
+}
+
+#footer .footer-content .portfolio ul li a .portfolio-content-title p {
+    font-size: 13px;
+    color: rgb(202, 202, 202);
+}
+
+#footer .footer-content .portfolio ul li a img {
+    width: 80px;
+}
+
+#footer .copy-right {
+    text-align: center;
+    background-color: #252525;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer .copy-right h5 {
+    color: #fff;
+}
+
+#footer .copy-right p {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#footer .copy-right svg {
+    margin: 0 5px;
+}
+
+#footer .copy-right svg.fa-code {
+    color: #2980b9;
+}
+
+#footer .copy-right svg.fa-heartbeat {
+    color: #e74c3c;
 }
