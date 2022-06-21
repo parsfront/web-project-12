@@ -717,6 +717,7 @@ header .brand-logo img {
 /* Article */
 #article {
     width: 100%;
+    height: 50vh;
     padding: 80px 0;
     display: flex;
     flex-direction: column;
@@ -784,4 +785,120 @@ header .brand-logo img {
 
 #article .section-title button:hover::before {
     height: 65px;
+}
+
+#article .article-post {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#article .post {
+    width: 32.33%;
+    background: white;
+}
+
+#article .post .post-img {
+    position: relative;
+    display: block;
+}
+
+#article .post img {
+    width: 100%;
+}
+
+#article .post .post-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #faa000;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+#article .post .post-img:hover .post-overlay {
+    opacity: 0.7;
+}
+
+#article .post .post-overlay svg {
+    font-size: 25px;
+    color: #fff;
+}
+
+#article .post .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+#article .post .date h2 {
+    margin-left: 15px;
+    font-size: 17px;
+    color: #000;
+}
+
+#article .post .date svg {
+    margin-left: 8px;
+    color: #faa000;
+}
+
+#article .post .post-desc {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#article .post .post-desc h3 a {
+    color: #222;
+}
+
+#article .post .post-desc p {
+    margin-top: 10px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #3d3731;
+}
+
+/* Partner */
+#partner {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #faa000;
+}
+
+#partner ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#partner ul li {
+    width: 24%;
+}
+
+#partner ul li a {
+    display: block;
+}
+
+#partner ul li a img {
+    width: 100%;
+    height: 100%;
 }
