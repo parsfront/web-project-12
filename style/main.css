@@ -444,7 +444,8 @@ header .brand-logo img {
     background-color: #df7904;
 }
 
-/* About */
+/* #about */
+
 #about {
     display: flex;
     padding: 100px 0;
@@ -481,11 +482,6 @@ header .brand-logo img {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
 }
 
 #about .section-title button::before {
@@ -530,11 +526,6 @@ header .brand-logo img {
 #about .about-team .about-team-item img {
     width: 100%;
     height: 350px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
 }
 
 #about .about-team .about-team-item .about-slide {
@@ -555,16 +546,11 @@ header .brand-logo img {
     -moz-transition: all 0.4s ease-in;
     -ms-transition: all 0.4s ease-in;
     -o-transition: all 0.4s ease-in;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
 }
 
 #about .about-team .about-team-item:hover .about-slide {
     bottom: 0;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 #about .about-team .about-team-item .about-slide ul {
@@ -744,7 +730,7 @@ header .brand-logo img {
 }
 
 #article .section-title h1 {
-    color: #000;
+    color: #fff;
 }
 
 #article .section-title button {
@@ -753,13 +739,15 @@ header .brand-logo img {
     height: 40px;
     font-family: "vazir";
     background-color: transparent;
-    color: #000;
+    color: #fff;
     font-size: 16px;
     margin-top: 30px;
     border: 3px solid #faa000;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    z-index: 10000;
+    outline: none;
 }
 
 #article .section-title button::before {
@@ -804,6 +792,48 @@ header .brand-logo img {
     display: block;
 }
 
+#article .post .post-img::before {
+    content: "";
+    width: 5px;
+    height: 100px;
+    background-color: #faa000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#article .post .post-img:hover::before {
+    width: 8px;
+    height: 200px;
+    background-color: #e4860c;
+}
+
+#article .post .post-img::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #faa000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#article .post .post-img:hover::after {
+    width: 200px;
+    height: 8px;
+    background-color: #e4860c;
+}
+
 #article .post img {
     width: 100%;
 }
@@ -811,9 +841,9 @@ header .brand-logo img {
 #article .post .post-overlay {
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
     background-color: #faa000;
     z-index: 1000;
     display: flex;
@@ -876,7 +906,8 @@ header .brand-logo img {
     color: #3d3731;
 }
 
-/* Partner */
+/* partner */
+
 #partner {
     width: 100%;
     padding: 80px 0;
@@ -901,4 +932,144 @@ header .brand-logo img {
 #partner ul li a img {
     width: 100%;
     height: 100%;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/footer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 0;
+    display: flex;
+}
+
+#footer .footer-about {
+    width: 100%;
+    display: flex;
+}
+
+#footer .footer-about .footer-about-title {
+    color: #fff;
+    width: 65%;
+}
+
+#footer .footer-about .footer-about-title h3 {
+    margin-bottom: 20px;
+    color: #faa000;
+}
+
+#footer .footer-about .footer-about-title p {
+    line-height: 1.7;
+    padding-left: 20px;
+}
+
+#footer .footer-about .footer-about-contact {
+    width: 35%;
+}
+
+#footer .footer-about .footer-about-contact form {
+    width: 100%;
+    display: flex;
+}
+
+#footer .footer-about .footer-about-contact form input {
+    width: 80%;
+    padding: 10px 15px;
+    font-family: "vazir";
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #faa000;
+}
+
+#footer .footer-about .footer-about-contact form button {
+    padding: 7px 25px;
+    font-family: "vazir";
+    background-color: #faa000;
+    border: none;
+    color: #fff;
+    margin-right: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#footer .footer-about .footer-about-contact .footer-social {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer .footer-about .footer-about-contact .footer-social ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#footer .footer-about .footer-about-contact .footer-social ul li a {
+    color: #fff;
+}
+
+#footer .footer-about .footer-about-contact .footer-social ul li a svg {
+    font-size: 25px;
+}
+
+#footer .footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+#footer .footer-content div {
+    width: 32.33%;
+}
+
+#footer .footer-content .hot-content h3 {
+    color: #faa000;
+    margin-bottom: 40px;
+}
+
+#footer .footer-content .hot-content ul {
+    width: 100%;
+}
+
+#footer .footer-content .hot-content ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #faa000;
+    padding-bottom: 20px;
+}
+
+#footer .footer-content .hot-content ul li:nth-child(3) {
+    border-bottom: none;
+}
+
+#footer .footer-content .hot-content ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .footer-content .hot-content ul li a .hot-content-title {
+    line-height: 30px;
+}
+
+#footer .footer-content .hot-content ul li a .hot-content-title h5 {
+    color: #faa000;
+}
+
+#footer .footer-content .hot-content ul li a .hot-content-title p {
+    font-size: 13px;
+    color: rgb(202, 202, 202);
+}
+
+#footer .footer-content .hot-content ul li a img {
+    width: 80px;
 }
