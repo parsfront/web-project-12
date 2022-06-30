@@ -108,6 +108,18 @@
 }
 
 @media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+
+    header nav {
+        align-items: center;
+    }
+
+    .toggle-menu {
+        display: flex;
+    }
+
     #info {
         display: none;
     }
