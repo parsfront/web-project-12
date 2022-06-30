@@ -1176,3 +1176,79 @@ header .brand-logo img {
 #footer .copy-right svg.fa-heartbeat {
     color: #e74c3c;
 }
+
+/* single */
+
+.single-header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/footer.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-header svg {
+    font-size: 250px;
+    color: #faa000;
+}
+
+#single-content {
+    background: red;
+    padding: 80px 0;
+}
+
+#single-content .single-content {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: yellow;
+}
+
+#single-content #main-content {
+    background: blue;
+    width: 69%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#single-content #main-content .main-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#single-content #main-content .main-title h3 {
+    color: #faa000;
+}
+
+#single-content #main-content .main-title .main-date {
+    display: flex;
+}
+
+#single-content #main-content .main-title .main-date h5 {
+    margin: 0 10px;
+}
+
+#single-content #main-content .main-title .main-date h5 svg {
+    color: #faa000;
+    margin-left: 5px;
+}
+
+#single-content #main-content .main-description {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#single-content #main-content .main-description img {
+    width: 100%;
+}
+
+#single-content #sidebar {
+    width: 29%;
+    background: green;
+}
